@@ -3,6 +3,10 @@
 ## Тестовое задание
 
 - Использованный фреймворк - Laravel 10
-
 - Тематика проекта: Связь <code>«многие ко многим»</code> 2-х таблиц <code>"Люди"</code> и <code>"Уровень образования"</code>
-Таблицы <code>persons</code> и <code>education_levels</code>, вспомогательная таблица для реализации связи «многие ко многим» <code>person_education_level</code>
+- Таблицы <code>persons</code> и <code>education_levels</code>, вспомогательная таблица для реализации связи «многие ко многим» <code>person_education_level</code>
+- Для таблиц созданы миграции
+- Работа с базой данных реализована через шаблон репозитория
+
+- Реализована простая аутентификация по ключу, для этого добавлен Middleware класс <code>ApiKeyMiddleware</code>
+- Для правильной работы аутентификации необходимо добавить переменную окружения <code>API_KEY</code> (файл <code>.env</code>, пример: <code>API_KEY=tst-app-api-key</code>)
